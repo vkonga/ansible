@@ -5,6 +5,6 @@
     number: 80
   tasks:
     - name: print the number is greather than 80
-      ansible.builin.debug:
+      ansible.builtin.debug:
         msg: "Given number is {{number}}"
       when: number > 100
