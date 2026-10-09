@@ -1,0 +1,7 @@
+- name: venkatesh
+  dob: 31/07/1997
+  email: vkongara048@gmail.com
+  address:
+  - type: permananet
+    dno: 7-4
+    street: hyder nagar
