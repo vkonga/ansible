@@ -15,4 +15,4 @@
   tasks:
     - name: print the vars and Tools
       ansible.builtin.debug:
-        msg: "The vars are {{name}},{{age}} and tools are {{Tools}}"
+        msg: "The vars are {{name}},{{age}} and tools are {{Tools}} and maps are {{Concepts}}"
