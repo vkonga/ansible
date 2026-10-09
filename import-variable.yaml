@@ -1,9 +1,9 @@
-- name: import variables
+- name: print information
   hosts: local
   connection: local
-  vars_files:
-  - course.yaml
+  vars-files:
+    - information.yaml
   tasks:
-  - name: print course information
-    ansible.builtin.debug:
-      msg: "Hi {{trainer}}, I completed {{course}} in {{duration}}"
+    - name: print person information
+      ansible.builtin.debug:
+        msg: "i am {{name}}"
