@@ -1,7 +1,7 @@
 - name: print information
   hosts: local
   connection: local
-  vars-files:
+  vars_files:
     - information.yaml
   tasks:
     - name: print person information
