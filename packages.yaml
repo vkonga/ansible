@@ -1,4 +1,4 @@
-- name: install packages
+- name: nginx install and run
   hosts: frontend
   become: yes
   tasks:
