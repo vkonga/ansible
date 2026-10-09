@@ -2,10 +2,11 @@
   hosts: local
   connection: local
   vars:
-    course: ansible
-    duration: 10hr
-    trainer: venkatesh
+    name: gowri
+    studied: pg
+    profession: software
   tasks:
-  - name: print course information
-    ansible.builtin.debug:
-      msg: "Hello {{trainer}}, I want to learn {{course}} in {{duration}}, is it possible"
+    - name: print information
+      # Debug function will print
+      ansible.builtin.debug:
+        msg: " hello, this is {{name}}, i graudtaed {{studied}}, my occupation is {{profession}}"
