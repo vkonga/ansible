@@ -1,17 +1,18 @@
-- name: datatypes concept
-  hosts: local
-  connection: local
+- name: ansible datatypes
+  hosts: frontend
+  become: yes
   vars:
-    duration: 120
-    course: "ansible"
-    is_live: true
-    tools:
-      - linux
-      - shell
-    concepts:
-      CI: jenkins
-      Scripting: "shell, terraform"
+    name: "venkat"
+    age: "29"
+    Tools:
+    - Linux
+    - shell
+    - ansible
+    - terraform
+    Concepts:
+      CI: Jenkins
+      Scripting: "python, yaml, shell"
   tasks:
-    - name: print course information
+    - name: print the vars and Tools
       ansible.builtin.debug:
-        msg: "courses is: {{course}}"
+        msg: "The vars are {{name}},{{age}} and tools are {{Tools}}"
