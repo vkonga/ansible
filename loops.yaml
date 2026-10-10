@@ -1,11 +1,11 @@
-- name: loops concept
-  hosts: local
-  connection: local
+- name: loops conecpt
+  hosts: frontend
+  become: yes
   tasks:
-    - name: print the list items
+    - name: print names
       ansible.builtin.debug:
-        msg: "the items are {{item}}"
+        msg: "Hello, {{items}}"
       loop:
         - suresh
-        - ramesh
-        - venkat
+        - Ramesh
+        - Joseph
