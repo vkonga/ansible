@@ -3,4 +3,4 @@
   tasks:
     - name: ckeck undefined variables
       ansible.builtin.debug:
-        msg: "hello, {{ default('Ramesh') }}"
+        msg: "hello, {{ person | default('Ramesh') }}"
