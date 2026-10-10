@@ -1,5 +1,7 @@
 - name: functions
   hosts: frontend
+  vars:
+    person: suresh
   tasks:
     - name: ckeck undefined variables
       ansible.builtin.debug:
