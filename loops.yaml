@@ -1,11 +1,11 @@
-- name: loops conecpt
+- name: loops topic
   hosts: frontend
-  become: yes
   tasks:
-    - name: print names
+    - name: prints names
       ansible.builtin.debug:
-        msg: "Hello, {{items}}"
+        msg: "Hello, {{ item }}"
       loop:
         - suresh
-        - Ramesh
-        - Joseph
+        - ramesh
+        - venkat
+        - kohli
