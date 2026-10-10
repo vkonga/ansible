@@ -1,0 +1,6 @@
+- name: functions
+  hosts: frontend
+  tasks:
+    - name: ckeck undefined variables
+      ansible.builtin.debug:
+        msg: "hello, {{ default('Ramesh') }}"
